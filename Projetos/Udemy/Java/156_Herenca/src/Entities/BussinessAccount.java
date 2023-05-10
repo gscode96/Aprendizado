@@ -31,4 +31,11 @@ public class BussinessAccount extends Account {
 
     }
 
+    @Override
+    public final void withdraw(Double amount) { //final no metodo impede que seja sobreescrito na subclasse
+        super.withdraw(amount);
+        balance -= 2.0;
+
+    }
+
 }
